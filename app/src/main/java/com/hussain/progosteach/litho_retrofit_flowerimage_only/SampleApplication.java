@@ -14,7 +14,7 @@ public class SampleApplication extends Application{
     @Override
     public void onCreate() {
         super.onCreate();
-        /*Fresco.initialize(this);*/
+        Fresco.initialize(this);
         SoLoader.init(this, false);
     }
 }

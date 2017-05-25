@@ -79,7 +79,7 @@ public class ListItemSpec {
                                 .text(instruction)
                                 .textSizeSp(12)
                                 .textColor(Color.GRAY)
-                                .maxLines(2)
+                                .maxLines(4)
                                 .minLines(2)
                                 .textSizeSp(12)
                                 .typeface(Typeface.createFromAsset(c.getAssets(), "font/gotham_book_webfont.ttf"))

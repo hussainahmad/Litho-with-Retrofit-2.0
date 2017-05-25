@@ -12,6 +12,7 @@ import com.facebook.litho.Component;
 import com.facebook.litho.ComponentContext;
 import com.facebook.litho.ComponentInfo;
 import com.facebook.litho.LithoView;
+import com.facebook.litho.widget.GridLayoutInfo;
 import com.facebook.litho.widget.LinearLayoutInfo;
 import com.facebook.litho.widget.Recycler;
 import com.facebook.litho.widget.RecyclerBinder;
@@ -33,9 +34,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final ComponentContext context = new ComponentContext(this);
+        /*final RecyclerBinder recyclerBinder = new RecyclerBinder(
+                context,
+                new LinearLayoutInfo(this, OrientationHelper.VERTICAL, false));*/
+
         final RecyclerBinder recyclerBinder = new RecyclerBinder(
                 context,
-                new LinearLayoutInfo(this, OrientationHelper.VERTICAL, false));
+                new GridLayoutInfo(this, 2));
 
         final Component component = Recycler.create(context)
                 .binder(recyclerBinder)
@@ -67,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 for (int i = 0; i < gifs.size(); i++) {
                     Log.i("Total data string is", gifs.toString());
                     Flower flower = gifs.get(i);
-                    Log.i("Flower", flower.getPhoto());
+                    Log.i("Flower", ConstantClass.Http.FLOWER_URL+flower.getPhoto());
                     /*JsonObject json = data.get(i).getAsJsonObject();
                     gifs.add)*/
                     ComponentInfo.Builder componentInfoBuilder = ComponentInfo.create();
