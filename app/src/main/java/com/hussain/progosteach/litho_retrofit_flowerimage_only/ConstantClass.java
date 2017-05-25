@@ -8,6 +8,6 @@ package com.hussain.progosteach.litho_retrofit_flowerimage_only;
 public class ConstantClass {
     public static class Http{
         public static final String BASE_URL = "http://services.hanselandpetal.com";
-       /* public static final String FLOWER_URL = "http://services.hanselandpetal.com/photos/";*/
+        public static final String FLOWER_URL = "http://services.hanselandpetal.com/photos/";
     }
 }
