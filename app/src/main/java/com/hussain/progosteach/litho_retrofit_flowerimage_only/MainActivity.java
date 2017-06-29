@@ -2,9 +2,8 @@ package com.hussain.progosteach.litho_retrofit_flowerimage_only;
 
 import android.graphics.Color;
 import android.graphics.Point;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.OrientationHelper;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Display;
 
@@ -13,13 +12,9 @@ import com.facebook.litho.ComponentContext;
 import com.facebook.litho.ComponentInfo;
 import com.facebook.litho.LithoView;
 import com.facebook.litho.widget.GridLayoutInfo;
-import com.facebook.litho.widget.LinearLayoutInfo;
 import com.facebook.litho.widget.Recycler;
 import com.facebook.litho.widget.RecyclerBinder;
-import com.google.gson.JsonObject;
 
-
-import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -30,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     private RestManager manager;
     private Flower mFlower;
+    private int a;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
