@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final ComponentContext context = new ComponentContext(this);
-        /*final RecyclerBinder recyclerBinder = new RecyclerBinder(
+        /*final RecyclerBinder0 recyclerBinder = new RecyclerBinder(
                 context,
                 new LinearLayoutInfo(this, OrientationHelper.VERTICAL, false));*/
 
